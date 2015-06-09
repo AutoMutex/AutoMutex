@@ -2,23 +2,21 @@
  * Copyright 2010- 
  */
 /**
- * @file       utility.h
+ * @file       autoMutex.h
  *
- * @note       ユーティリティヘッダファイル
- *
- * @author     (TOA) Shigeharu kamiya
+ * @note       ミューテックス自動解放クラス ヘッダーファイル
  *
  */
 /*###########################################################################*/
-#ifndef __UTILITY_H__
-#define __UTILITY_H__
+#ifndef __AUTO_MUTEX__
+#define __AUTO_MUTEX__
 
 #include <windows.h>
 
 /*-------------------------------------------
 	クラス定義
 --------------------------------------------*/
-//自動解除付ミューテックス
+//ミューテックス自動解放クラス
 class CAutoMutex
 {
 private:
@@ -35,4 +33,4 @@ public:
 };
 
 
-#endif  /* __UTILITY_H__ */
+#endif  /* __AUTO_MUTEX__ */
