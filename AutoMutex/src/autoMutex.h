@@ -23,14 +23,14 @@ class CAutoMutex
 {
 private:
 	HANDLE	m_hMutex;
-	INT		m_iErr;
+	INT	m_iErr;
 
 public:
 	CAutoMutex(HANDLE hMutex);
 	~CAutoMutex();
-	INT		Lock();
+	INT	Lock();
 	VOID	Unlock();
-	INT		CheckErr();
+	INT	CheckErr();
 	VOID	Exit();
 };
 
